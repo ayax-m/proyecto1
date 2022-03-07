@@ -1,21 +1,26 @@
 /* style.css */
+* {
+  text-decoration-line: none;
+}
 
 body {
   margin: 0;
 }
 
-.requirements {
-grid-area: requirements;
+/*   Jumbotron   */
+.introduction {
+grid-area: introduction;
 }
 
 .learn {
 grid-area: learn;
 }
 
-.content {
-grid-area: content;
+.ball {
+grid-area: ball;
 }
 
+/*   Header   */
 .header {
 grid-area: header;
 display: grid;
@@ -25,86 +30,139 @@ display: grid;
 
 .company {
   grid-row: 1;
-  grid-column: 1 / 3;
+  grid-column: 1 / 8;
 }
 
-.home {
+.courses {
   grid-row: 1;
-  grid-column: 3;
-  
+  grid-column: 8;  
 }
 
-.showcase {
+.portfolio {
   grid-row: 1;
-  grid-column: 4;
+  grid-column: 9;
 }
 
 .about {
   grid-row: 1;
-  grid-column: 5;
+  grid-column: 10;
 }
+
+/*   Blog  */
+.blog {
+  grid-area: blog;
+}
+
+.anim101 {
+  grid-area: anim101;
+}
+
+.advanced {
+  grid-area: advanced;
+}
+
+
+/*   Adicionales   */
+.adicionales {
+  grid-area: adicionales;
+}
+
+/*   Footer   */
 
 .footer {
 grid-area: footer;
 }
 
+/*   Wrapper  */
+
 .wrapper {
-background-color: #fff;
-color: #444;
+  /*background-color: #F1FAEE;
+  color: #444;*/
+  background-color: white;
+  color: black;
 }
 
-  .wrapper {
+.wrapper {
     display: grid;
     grid-gap: 1em;
     grid-template-areas:
      "header"
-     "content"
-     "requirements"
+     "ball"
+     "introduction"
      "learn"
+     "blog"
+     "anim101"
+     "advanced"
+     "adicionales"
      "footer"
-  }
+}
 
 @media only screen and (min-width: 600px)  {
-.wrapper {
-
-grid-template-columns: 20% auto;
-grid-template-areas:
-    "header   header"
-"requirements  content"
-"learn   learn"
-"footer   footer";
-}
+  .wrapper {
+    grid-template-columns: 40% auto;
+    grid-template-areas:
+      "header   header"
+      "introduction  ball"
+      "learn   learn"
+      "blog   blog"
+      "anim101  advanced"
+      "adicionales   adicionales"
+      "footer   footer";
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media only screen and (min-width: 800px)   {
-.wrapper {
-      grid-gap: 20px;
-grid-template-columns: 20% auto 20%;
-grid-template-areas:
+  .wrapper {
+    grid-gap: 10px;
+    grid-template-columns: 40% auto 40%;
+    grid-template-areas:
       "header  header  header"
-"requirements content learn"
-"footer  footer  footer";
-max-width: 100%;
+      /*"introduction ball learn"*/
+      "introduction introduction ball"
+      "learn   learn   ball"
+      "blog   blog   blog"
+      "anim101 . advanced"
+      "adicionales   adicionales   adicionales"
+      "footer   footer   footer";
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+  }
 }
-}
+
+
+
+
 
 .box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 150%; 
+  /*background-color: #457B9D;
+  color: #fff; */  
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  padding: 5px;
+  /*font-size: 150%; */
 }
 
+/* Header and footer settings */
 .header,
 .company,
-.home,
-.showcase,
+.courses,
+.portfolio,
 .about,
 .footer {
-  background-color: #999;
+  /*background-color: #1D3557; */
   border-radius: 0;
   text-align: right;
+  /* height: 50px; */
+  padding: 5px;
+}
+
+.courses,
+.portfolio,
+.about {
+  padding-top: 20px;
 }
 
 .company,
@@ -113,6 +171,26 @@ max-width: 100%;
 }
 
 .learn {
-  background-color: #ccc;
-  color: #444;
+  /*background-color: #A8DADC;*/
+  color: #1D3557;
+  /*color: white;*/
 }
+
+.courses:hover, .portfolio:hover, .about:hover {
+  background-color: #e6f2ff;
+  /* color: rgb(0, 221, 255); */
+  color: #0056ff;
+  /*cursor: pointer; */
+}
+
+.courses a:visited {
+  color: #0056ff;
+  cursor: pointer;
+}
+
+.courses a:hover {
+  color: #0080CC;
+  font-weight: bold;
+  cursor: pointer;
+}
+
