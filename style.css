@@ -147,7 +147,7 @@ grid-area: footer;
 
 @media only screen and (min-width: 600px)  {
   .wrapper {
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 50% 50%;
     grid-template-areas:
       "header   header"
       "introduction  ball"
@@ -169,14 +169,14 @@ grid-area: footer;
 @media only screen and (min-width: 800px)   {
   .wrapper {
     grid-gap: 10px;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-areas:
       "header  header  header"
       /*"introduction ball learn"*/
       "introduction introduction ball"
       "learn   learn   ball"
       "blog   blog   blog"
-      "anim101 . advanced"
+      "anim101  advanced  ."
       "adicionales   adicionales   adicionales"
       "video01   video02   video03"
       "video04   video05   video06"
@@ -228,6 +228,21 @@ grid-area: footer;
   /*background-color: #A8DADC;*/
   color: #1D3557;
   /*color: white;*/
+}
+
+.anim101 {
+  /*background-color: #00DDFF; */
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #0056FF;
+  border-radius: 10px;
+}
+
+.advanced {
+  text-align: center;
+  margin: 20px;
+  border: 1px solid #0056FF;
+  border-radius: 10px;
 }
 
 .courses:hover, .portfolio:hover, .about:hover {
