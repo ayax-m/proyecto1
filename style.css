@@ -110,9 +110,9 @@ display: grid;
 
 /*   Footer   */
 
-.footer {
+/*.footer {
 grid-area: footer;
-}
+}*/
 
 /*   Wrapper  */
 
@@ -144,8 +144,7 @@ grid-area: footer;
      "video06"
      "video07"
      "video08"
-     "video09"
-     "footer";
+     "video09";
     padding-left: 2%;
     padding-right: 2%;
 }
@@ -165,8 +164,7 @@ grid-area: footer;
       "video03  video04"
       "video05  video06"
       "video07  video08"
-      "video09  ."
-      "footer   footer";
+      "video09  .";
     padding-left: 5%;
     padding-right: 5%;
   }
@@ -187,8 +185,7 @@ grid-area: footer;
       "adicionales   adicionales   adicionales"
       "video01   video02   video03"
       "video04   video05   video06"
-      "video07   video08   video09"
-      "footer   footer   footer";
+      "video07   video08   video09";
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -202,17 +199,16 @@ grid-area: footer;
   background-color: white;
   color: black;
   border-radius: 0;
-  padding: 5px;
+  padding: 0px;
   /*font-size: 150%; */
 }
 
-/* Header and footer settings */
+/* Header settings */
 .header,
 .company,
 .courses,
 .portfolio,
-.about,
-.footer {
+.about {
   /*background-color: #1D3557; */
   border-radius: 0;
   text-align: right;
@@ -226,8 +222,7 @@ grid-area: footer;
   padding-top: 20px;
 }
 
-.company,
-.footer {
+.company {
   text-align: left;
 }
 
@@ -267,15 +262,17 @@ grid-area: footer;
   font-weight: bold;
   background: #0056FF;
   color: white;
-  padding: 3px 7px;
+  padding: 5px 7px;
   border: none;
-  border-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
 /*
 .courses:hover, .portfolio:hover, .about:hover {
   color: #00DDFF;
 }*/
+
 
 .courses a:visited,
 .portfolio a:visited,
@@ -292,3 +289,21 @@ grid-area: footer;
   cursor: pointer;
 }
 
+.pie {
+  display: flex;
+  height: 100px;
+  background-color: white;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+
+.pie .pie-item {
+  display: flex;
+  font-size: 14px;
+  font-weight: bold;
+  width: 20%;
+  padding-top: 30px;
+  justify-content: space-evenly;
+  text-decoration-line: none;
+}
