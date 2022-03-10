@@ -61,6 +61,10 @@ display: grid;
   grid-area: advanced;
 }
 
+/*
+.course-box {
+  grid-area: course-box;
+} */
 
 /*   Adicionales   */
 .adicionales {
@@ -130,6 +134,7 @@ grid-area: footer;
      "blog"
      "anim101"
      "advanced"
+     /*"course-box"*/
      "adicionales"
      "video01"
      "video02"
@@ -154,6 +159,7 @@ grid-area: footer;
       "learn   learn"
       "blog   blog"
       "anim101  advanced"
+      /*"course-box  course-box"*/
       "adicionales   adicionales"
       "video01  video02"
       "video03  video04"
@@ -177,6 +183,7 @@ grid-area: footer;
       "learn   learn   ball"
       "blog   blog   blog"
       "anim101  advanced  ."
+      /*"course-box   course-box  ."*/
       "adicionales   adicionales   adicionales"
       "video01   video02   video03"
       "video04   video05   video06"
@@ -230,36 +237,58 @@ grid-area: footer;
   /*color: white;*/
 }
 
+
 .anim101 {
-  /*background-color: #00DDFF; */
   text-align: center;
   margin: 20px;
-  border: 1px solid #0056FF;
-  border-radius: 10px;
+  border: .5px solid #0056FF;
+  border-radius: 5px;
 }
 
 .advanced {
   text-align: center;
   margin: 20px;
+  border: .5px solid #0056FF;
+  border-radius: 5px;
+}
+
+/*
+.course-box {
+  text-align: center;
+  margin: 20px;
   border: 1px solid #0056FF;
   border-radius: 10px;
+}*/
+
+.courses-sub {
+  display: inline-block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  background: #0056FF;
+  color: white;
+  padding: 3px 7px;
+  border: none;
+  border-radius: 2px;
 }
 
+/*
 .courses:hover, .portfolio:hover, .about:hover {
-  background-color: #e6f2ff;
-  /* color: rgb(0, 221, 255); */
-  color: #0056ff;
-  /*cursor: pointer; */
-}
+  color: #00DDFF;
+}*/
 
-.courses a:visited {
-  color: #0056ff;
+.courses a:visited,
+.portfolio a:visited,
+.about a:visited {
+  color: #0056FF;
   cursor: pointer;
 }
 
-.courses a:hover {
-  color: #0080CC;
-  font-weight: bold;
+.courses a:hover,
+.portfolio a:hover,
+.about a:hover {
+  color: #00DDFF;
+  font-weight: bolder;
   cursor: pointer;
 }
 
