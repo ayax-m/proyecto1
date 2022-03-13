@@ -119,8 +119,16 @@ body {
   text-transform: uppercase;
 }
 
+a {
+  color: white;
+}
+
 a:visited {
   color: white;
+}
+
+a:hover {
+  color: #00ddff;
 }
 
 
