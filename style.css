@@ -67,15 +67,19 @@ a:hover {
 
 /*   Jumbotron   */
 .introduction {
-grid-area: introduction;
+  grid-area: introduction;
 }
 
 .learn {
-grid-area: learn;
+  grid-area: learn;
 }
 
 .ball {
-grid-area: ball;
+  grid-area: ball;
+}
+
+.contact {
+  grid-area: contact;
 }
 
 
@@ -143,6 +147,7 @@ grid-area: ball;
   color: #444;*/
   background-color: white;
   color: black;
+  font-size: 1.1rem;
 }
 
 .wrapper {
@@ -152,6 +157,7 @@ grid-area: ball;
      "introduction"
      "ball"
      "learn"
+     "contact"
      "blog"
      "anim101"
      "advanced"
@@ -174,8 +180,9 @@ grid-area: ball;
   .wrapper {
     grid-template-columns: 50% 50%;
     grid-template-areas:
-      "introduction  ."
+      "introduction  ball"
       "learn   ball"
+      "contact  ball"
       "blog   blog"
       "anim101  advanced"
       "adicionales   adicionales"
@@ -196,6 +203,7 @@ grid-area: ball;
     grid-template-areas:
       "introduction introduction ball"
       "learn   learn   ball"
+      "contact   contact   ball"
       "blog   blog   blog"
       "anim101  advanced  ."
       "adicionales   adicionales   adicionales"
@@ -224,7 +232,7 @@ grid-area: ball;
 .introduction,
 .blog, 
 .adicionales {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .learn {
@@ -256,7 +264,7 @@ grid-area: ball;
   font-weight: bold;
   background: #0056FF;
   color: white;
-  padding: 5px 7px;
+  padding: 8px 7px;
   border: none;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
