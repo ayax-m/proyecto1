@@ -16,7 +16,8 @@ body {
   height: 80px;
   justify-content: center;
   text-decoration: none;
-  position:fixed
+  position:fixed;
+  z-index: 2;
 }
 
 .nav #nav-logo {
@@ -36,12 +37,14 @@ body {
 }
 .nav .nav-item {
   display: flex;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 14px;
   font-weight: bold;
   width: 9%;
   padding-top: 30px;
   justify-content: space-evenly;
   text-decoration-line: none;
+  text-transform: uppercase;
   color: white;
 }
 
