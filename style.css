@@ -1,15 +1,25 @@
 /* style.css */
 * {
-  text-decoration-line: none;
+  /*text-decoration-line: none;
+  box-sizing: border-box;*/
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  /*overflow-y: hidden;*/
+  overflow-x: hidden;
 }
 
 body {
+  /*text-decoration-line: none;*/
   margin: 0;
 }
 
 /* Header */
+/*
 .nav {
-  display: flex;
+  display: grid;
   background-color: black;
   color: white;
   width: 100%;
@@ -18,6 +28,13 @@ body {
   text-decoration: none;
   position:fixed;
   z-index: 2;
+}*/
+/*
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  position: fixed;
 }
 
 .nav #nav-logo {
@@ -29,24 +46,28 @@ body {
   background-position-x: left;
   background-position-y: center;
   justify-content: left;
-  /*padding-top: 20px;
+  padding-top: 20px;
   padding-right: 300px;
-  padding-left: 200px;*/
+  padding-left: 200px;
   width: 40%;
   
-}
+}*/
+
+/*
 .nav .nav-item {
   display: flex;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 14px;
   font-weight: bold;
-  width: 9%;
+  width: 9%; 
   padding-top: 30px;
   justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   text-decoration-line: none;
   text-transform: uppercase;
   color: white;
-}
+
 
 
 .nav .nav-item:hover {
@@ -62,6 +83,44 @@ body {
 .nav .nav-item a:hover {
   color: rgb(30, 215, 96);
   cursor: pointer;
+}
+*/
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 50px;
+  /*background-color: #53575c;*/
+  background-color: black;
+  box-shadow: 2px 2px 1px rgba(46, 46, 46, 0.6);
+  position: fixed;
+  z-index: 2;
+}
+
+.logo img {
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+
+.menu-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+a:visited {
+  color: white;
 }
 
 
