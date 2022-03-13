@@ -17,74 +17,6 @@ body {
 }
 
 /* Header */
-/*
-.nav {
-  display: grid;
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 80px;
-  justify-content: center;
-  text-decoration: none;
-  position:fixed;
-  z-index: 2;
-}*/
-/*
-.nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  position: fixed;
-}
-
-.nav #nav-logo {
-  display: block;
-  background-color: unset;
-  background-image: url(./resources/AnymaxFavicon256.ico);
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position-x: left;
-  background-position-y: center;
-  justify-content: left;
-  padding-top: 20px;
-  padding-right: 300px;
-  padding-left: 200px;
-  width: 40%;
-  
-}*/
-
-/*
-.nav .nav-item {
-  display: flex;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-  width: 9%; 
-  padding-top: 30px;
-  justify-content: space-evenly;
-  justify-content: center;
-  align-items: center;
-  text-decoration-line: none;
-  text-transform: uppercase;
-  color: white;
-
-
-
-.nav .nav-item:hover {
-  color: rgb(30, 215, 96);
-  cursor: pointer;
-}
-
-.nav .nav-item a:visited {
-  color: white;
-  cursor: pointer;
-}
-
-.nav .nav-item a:hover {
-  color: rgb(30, 215, 96);
-  cursor: pointer;
-}
-*/
 
 .header {
   display: grid;
@@ -110,7 +42,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
-  width: 500px;
+  width: 300px;
   height: 50px;
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
@@ -235,6 +167,7 @@ grid-area: ball;
      "video09";
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 @media only screen and (min-width: 600px)  {
@@ -261,7 +194,7 @@ grid-area: ball;
     grid-gap: 10px;
     grid-template-columns: 33% 33% 33%;
     grid-template-areas:
-      "introduction introduction introduction"
+      "introduction introduction ball"
       "learn   learn   ball"
       "blog   blog   blog"
       "anim101  advanced  ."
@@ -271,6 +204,8 @@ grid-area: ball;
       "video07   video08   video09";
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
   }
 }
 
@@ -332,9 +267,9 @@ grid-area: ball;
 .pie {
   display: flex;
   height: 100px;
-  background-color: white;
+  background-color: black;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 5px;
 }
 
 
@@ -342,8 +277,10 @@ grid-area: ball;
   display: flex;
   font-size: 14px;
   font-weight: bold;
+  color: white;
   width: 20%;
-  padding-top: 30px;
-  justify-content: space-evenly;
+  /*padding-top: 10px;*/
+  justify-content: space-between;
+  align-self: center;
   text-decoration-line: none;
 }
